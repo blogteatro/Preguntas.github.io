@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="../css/estilo-juego.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="nav-menu"><a href="presentacion.html">Resgresar menu principal</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>titulo del juego </h1>
+        <p>Juego de preguntas</p>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3>1 ¿ cuantas patas tiene un perro?</h3>
+            <label >
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> tres
+            </label>
+            <label >
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> cuatro
+            </label>
+            <label >
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> ninguna
+            </label>
+        </section>
+        <!-- pregunta n2 -->
+        <section id="p1">
+            <h3>2 ¿ cuantas patas tiene un perro?</h3>
+            <label >
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> tres
+            </label>
+            <label >
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> cuatro
+            </label>
+            <label >
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> ninguna
+            </label>
+        </section>
+        <!-- pregunta n3 -->
+        <section id="p2">
+            <h3>3 ¿ cuantas patas tiene un perro?</h3>
+            <label for="">
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> tres
+            </label>
+            <label >
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> cuatro
+            </label>
+            <label >
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> ninguna
+            </label>
+        </section>
+        <!-- pregunta n4 -->
+        <section id="p3">
+            <h3>4 ¿ cuantas patas tiene un perro?</h3>
+            <label >
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> tres
+            </label>
+            <label >
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> cuatro
+            </label>
+            <label >
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> ninguna
+            </label>
+        </section>
+         <!-- pregunta n5 -->
+         <section id="p4">
+            <h3>5 ¿ cuantas patas tiene un perro?</h3>
+            <label >
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> tres
+            </label>
+            <label >
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> cuatro
+            </label>
+            <label >
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> ninguna
+            </label>
+        </section>
+        <button onclick="corregir()">Corregir</button>
+        <button onclick="reset()">Reiniciar</button>
+        <h2>Cantidad de aciertos : <span id="resultado"></span></h2>
+    </div>
+    <script src="../js/juego.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+.body
+{
+    background-color: cornsilk;
+    font-size: 100px;
+}
+.nav ul {
+    list-style:none;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.nav-menu {
+    margin-right: 20px; /* Separación entre elementos */
+}
+
+.nav-menu:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento para evitar desbordamiento */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    background-color: rgb(70, 8, 8);
+    color: rgb(231, 222, 222);
+    text-decoration:underline;
+}
+
